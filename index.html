@@ -1,16 +1,123 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Student Page</title>
-</head>
-<body>
 
-  <h1>This is my VERY BASIC Student Test website</h1>
-  
-  <p>I will make this web site much better by researching HTML and practicing Linux!</p>
+     <head>
+<script language="javascript">
+	var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	     <title>Ikiwi homepage</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     </head>
 
-  <li>item1</li>
-  <li>item2</li>
+     <body>
+		<h1>Welcome to ikiwi's homepage</h1>
+		<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="1.jpg" style="width:100%">
+    <div class="text"><h3>Wall Paper</h3></div>
+  </div>
 
-</body>
+  <div class="mySlides fade">
+    <img src="2.png" style="width:100%">
+    <div class="text"><h3>Games</h3></div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="3.jpg" style="width:100%">
+    <div class="text"><h3>Anime</h3></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+	     <h2>About myself</h2>
+		<img src="mcree.png"></img>
+		<p>My name is <b>Leo Lu</b>, and I am a student in <a href="http://cc.sduhsd.net/" target="_blank"><i>canyon crest academy</i></a>.</p>
+		<img style="width:200px"src="http://teachers.sduhsd.net/bbaum/img9.gif"></img>
+		<p>Here is my phone number <b>858-284-9607</b>.</p>
+                 
+		
+		<div>
+			<h2>SPORT</h2>
+			<p>Basket ball! Basket ball! Basket Ball!</p>
+			<p>(Want to know more? Go to <a href="http://www.nba.com/"><i>NBA</i></a>)</p>
+		</div>
+		
+		<div>
+			<a href="http://cswarzone.com/csgo/"><h2>Counter Strike</h2></a>
+			<p>CS playing</p>
+			<ul>
+				<a href="http://counterstrike.wikia.com/wiki/Map/List" ><li>Maps</li></a>
+				<a href="http://counterstrike.wikia.com/wiki/Weapons"><li>Weapons</li></a>
+				<a href="http://counterstrike.wikia.com/wiki/Terrorists"><li>Terrorist</li></a>
+				<a href="http://counterstrike.wikia.com/wiki/Counter-Terrorists"><li>Counter-Terrorists</li></a>
+			</ul>
+		</div>
+		
+		<div>
+			<h2>My Schedule</h2>
+			<table>
+				<tr>
+					
+					<td>Monday</td>
+					<td>Tuesday</td>
+					<td>Wednesday</td>
+					<td>Thursday</td>
+					<td>Friday</td>
+					<td>Saturday</td>
+					<td>Sunday</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Free time</td>
+					<td>Free time</td>
+					<td><a href="http://www.sdcl.org/locations_DM.html">Volunteer</a></td>
+					<td><a href="http://www.sdcl.org/locations_DM.html">Volunteer</a></td>
+					<td>Free time</td>
+					<td>Free time</td>
+					<td>Free time</td>
+					
+				</tr>
+			</table>
+		</div>
+<p>I also like to collect wallpaper.Please visit my <a href="ikiwi.github.io/wallpaper.html">wallpaper collection page<a>.
+		</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-100476241-1', 'auto');
+  ga('send', 'pageview');
+</script>
 </html>
