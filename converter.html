@@ -1,16 +1,21 @@
 <html>
 	<head>
-		<title>Base number Converter</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<mete name="viewport" content = "width=device-width, initial-scale=1.0">
+		<title>Base Number Converter</title>
 	<head/>
 	
 	<body>	
-	<h1>Use this Base Number Converter!</h1>
-	
+	<h1>Welcome to Base Number Converter!</h1>
+	<p>Use the following</p>
 	
 	<form action="converter.php" method="post">
-	Type:<input type="text" name="arg1"><br>
+	
+	Type: <input type="radio" name="arg1" value="Decimal to Binary">Decimal to Binary
+                <input type="radio" name="arg1" value="Decimal to Hexadecimal">Decimal to Hexadecimal
+                <input type="radio" name="arg1" value="Hexadecimal to Binary">Hexadecimal to Binary
+                <input type="radio" name="arg1" value="Binary to Octal">Binary to Octal
+                <input type="radio" name="arg1" value="Octal to Binary">Octal to Binary
+                <input type="radio" name="arg1" value="Binary to Decimal">Binary to Decimal
+	<p> </p>
 	Input:<input type="text" name="arg2"><br>
 	<input type="Submit">
 	</form>
